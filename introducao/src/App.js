@@ -14,6 +14,9 @@ import Temperatura03 from './components/Atividade00/Temperatura03';
 import Pai01 from './components/Atividade01/Pai01';
 import SistemaSolar from './components/04Children/SistemaSolar';
 import Planeta from './components/04Children/Planeta';
+import Galaxia from './components/04Children/Galaxia';
+
+import * as PC from './components/Atividade01/MeuPc02';
 
 /* <HelloWorld />*/
 function App() {
@@ -40,14 +43,10 @@ function App() {
 
       <Temperatura03 /> */}
       {/* <Pai01 /> */}
-      <SistemaSolar>
-        <hr />
-        <Planeta nome={'Mercúrio'} tipo={'Rochoso'} ordem={1} />
-        <hr />
-        <Planeta nome={'Vênus'} tipo={'Rochoso'} ordem={2} />
-        <hr />
-        <Planeta nome={'Terra'} tipo={'Rochoso'} ordem={3} />
-      </SistemaSolar>
+      {/* <Galaxia nome={'Via láctea'} /> */}
+      <PC.PlacaDeVideo nome={'placamaexr'} preco={100} />
+      <PC.PlacaMae nome={'alguma-mae'} preco={150} />
+      <PC.Memoria nome={'alguma-memoria'} preco={50} />
     </div>
   );
 }

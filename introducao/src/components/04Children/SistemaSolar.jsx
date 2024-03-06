@@ -1,10 +1,10 @@
 import React from 'react';
 import Planeta from './Planeta';
 
-const SistemaSolar = ({ children }) => {
+const SistemaSolar = ({ children, galaxia }) => {
   return (
     <>
-      <h2>Sistema Solar</h2>
+      <h2>Sistema Solar da Galáxia {galaxia}</h2>
       {children}
     </>
   );
