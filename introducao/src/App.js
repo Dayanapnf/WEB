@@ -17,6 +17,7 @@ import Planeta from './components/04Children/Planeta';
 import Galaxia from './components/04Children/Galaxia';
 
 import * as PC from './components/Atividade01/MeuPc02';
+import { Arena, World, Hero, Enemy } from './components/Atividade01/Batalha03';
 
 /* <HelloWorld />*/
 function App() {
@@ -43,10 +44,20 @@ function App() {
 
       <Temperatura03 /> */}
       {/* <Pai01 /> */}
-      {/* <Galaxia nome={'Via láctea'} /> */}
-      <PC.PlacaDeVideo nome={'placamaexr'} preco={100} />
+      <Galaxia nome={'Via láctea'} />
+      {/* <PC.PlacaDeVideo nome={'placamaexr'} preco={100} />
       <PC.PlacaMae nome={'alguma-mae'} preco={150} />
-      <PC.Memoria nome={'alguma-memoria'} preco={50} />
+      <PC.Memoria nome={'alguma-memoria'} preco={50} /> */}
+
+      {/* <World>
+        <Arena />
+        <Arena />
+        <Arena />
+      </World> */}
+      {/* <Arena arena="Tokio Dome – Underground Arena">
+        <Hero name="Sicrano de Tal" img="hero.jpg" />
+        <Enemy name="Fulano de Tal" img="enemy.png" />
+      </Arena> */}
     </div>
   );
 }
