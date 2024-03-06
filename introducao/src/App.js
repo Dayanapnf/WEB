@@ -7,10 +7,11 @@ import Curso from './components/01Atividade/Curso';
 import {
   MeusDados,
   MeusDadosArrowS,
+  MeusDadosClass,
   MeusDadosFunction,
-} from './components/atividade00/MeusDados01';
-import MeusDados02 from './components/atividade00/MeusDados02';
-import Temperatura03 from './components/atividade00/Temperatura03';
+} from './components/Atividade00/MeusDados01';
+import MeusDados02 from './components/Atividade00/MeusDados02';
+import Temperatura03 from './components/Atividade00/Temperatura03';
 
 /* <HelloWorld />*/
 function App() {
@@ -18,20 +19,23 @@ function App() {
     <div className="App">
       {/* <FuncoesInternas /> */}
       {/* <Loja /> */}
-      {/* <Curso /> */}
+      <Curso />
+      <hr />
       <MeusDados />
       <hr />
       <MeusDadosArrowS />
       <hr />
       <MeusDadosFunction />
       <hr />
-
+      <MeusDadosClass />
+      <hr />
       <MeusDados02
         nome="Dayana Priscilla Nunes F Costa"
         curso="SI"
         universidade="UFC"
       />
       <hr />
+
       <Temperatura03 />
     </div>
   );
