@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import HelloWorld from './components/01HelloWorld/HelloWorld';
 import FuncoesInternas from './components/02FuncoesInternas/FuncoesInternas';
@@ -12,6 +11,9 @@ import {
 } from './components/Atividade00/MeusDados01';
 import MeusDados02 from './components/Atividade00/MeusDados02';
 import Temperatura03 from './components/Atividade00/Temperatura03';
+import Pai01 from './components/Atividade01/Pai01';
+import SistemaSolar from './components/04Children/SistemaSolar';
+import Planeta from './components/04Children/Planeta';
 
 /* <HelloWorld />*/
 function App() {
@@ -19,8 +21,8 @@ function App() {
     <div className="App">
       {/* <FuncoesInternas /> */}
       {/* <Loja /> */}
-      <Curso />
-      <hr />
+      {/* <Curso /> */}
+      {/* <hr />
       <MeusDados />
       <hr />
       <MeusDadosArrowS />
@@ -36,7 +38,16 @@ function App() {
       />
       <hr />
 
-      <Temperatura03 />
+      <Temperatura03 /> */}
+      {/* <Pai01 /> */}
+      <SistemaSolar>
+        <hr />
+        <Planeta nome={'Mercúrio'} tipo={'Rochoso'} ordem={1} />
+        <hr />
+        <Planeta nome={'Vênus'} tipo={'Rochoso'} ordem={2} />
+        <hr />
+        <Planeta nome={'Terra'} tipo={'Rochoso'} ordem={3} />
+      </SistemaSolar>
     </div>
   );
 }
