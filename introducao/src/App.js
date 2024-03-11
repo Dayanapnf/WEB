@@ -18,11 +18,15 @@ import Galaxia from './components/04Children/Galaxia';
 
 import * as PC from './components/Atividade01/MeuPc02';
 import { Arena, World, Hero, Enemy } from './components/Atividade01/Batalha03';
+import ComPai from './components/05ComPaiFilho/ComPai';
+import Estados from './components/06Estados/Estados';
+import Pokemon from './components/06Estados/Pokemon';
 
 /* <HelloWorld />*/
 function App() {
   return (
     <div className="App">
+      <h1>Desenvolvimento Web</h1>
       {/* <FuncoesInternas /> */}
       {/* <Loja /> */}
       {/* <Curso /> */}
@@ -44,8 +48,8 @@ function App() {
 
       <Temperatura03 /> */}
       {/* <Pai01 /> */}
-      <Galaxia nome={'Via láctea'} />
-      {/* <PC.PlacaDeVideo nome={'placamaexr'} preco={100} />
+      {/* <Galaxia nome={'Via láctea'} /> */}
+      {/* <PC.PlacaDeVideo nome={'alguma-placa-mae'} preco={100} />
       <PC.PlacaMae nome={'alguma-mae'} preco={150} />
       <PC.Memoria nome={'alguma-memoria'} preco={50} /> */}
 
@@ -58,6 +62,9 @@ function App() {
         <Hero name="Sicrano de Tal" img="hero.jpg" />
         <Enemy name="Fulano de Tal" img="enemy.png" />
       </Arena> */}
+      {/* <ComPai /> */}
+      {/* <Estados /> */}
+      <Pokemon />
     </div>
   );
 }
