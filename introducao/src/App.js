@@ -56,7 +56,7 @@ function App() {
 
       <Temperatura03 /> */}
       {/* <Galaxia nome={'Via láctea'} /> */}
-      {/* <CompA /> */}
+      <CompA />
       {/* <Pai01 />
       <div className="container ">
         <h1 className="centralizar">Meu PC</h1>

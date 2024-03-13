@@ -4,7 +4,7 @@ const CompA = () => {
   const variavelDeA = 'Variável de A';
   return (
     <div>
-      <h1>Sou pai de A e B</h1>
+      <h1>Sou pai de B e C</h1>
       <CompB variavelDeA={variavelDeA} />
       <CompC variavelDeA={variavelDeA} />
     </div>

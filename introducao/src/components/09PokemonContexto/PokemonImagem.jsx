@@ -5,13 +5,14 @@ import { PokemonContexto } from './PokemonContexto';
 
 const PoKemonImagem = () => {
   const { id } = useContext(PokemonContexto);
+  const { setId } = useContext(PokemonContexto);
   const [mensagem, setMensagem] = useState('');
   const url =
     'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/';
 
   useEffect(() => {
-    if (id == 1) {
-      setMensagem('Não é possível voltar');
+    if (id <= 1) {
+      setMensagem('Clique no +');
     } else {
       setMensagem('');
     }

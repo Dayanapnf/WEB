@@ -2,8 +2,10 @@ import React from 'react';
 import { Variavel } from './VariavelContext';
 import { useContext } from 'react';
 
+//importar/prover/usar
+
 const CompA = () => {
-  const variavelDeA = 'Variável de A';
+  const variavelDeA = 'Variável de A contexto';
   return (
     <div>
       <Variavel.Provider value={variavelDeA}>
@@ -17,7 +19,7 @@ const CompB = () => {
   const variavel = useContext(Variavel);
   return (
     <div>
-      <h3>B:{variavel}</h3>
+      <h3>B: {variavel}</h3>
     </div>
   );
 };
