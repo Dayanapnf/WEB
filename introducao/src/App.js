@@ -21,6 +21,14 @@ import { Arena, World, Hero, Enemy } from './components/Atividade01/Batalha03';
 import ComPai from './components/05ComPaiFilho/ComPai';
 import Estados from './components/06Estados/Estados';
 import Pokemon from './components/06Estados/Pokemon';
+import {
+  CompA,
+  CompB,
+  CompC,
+  CompD,
+  CompE,
+} from './components/08Contexto/Contexto';
+import PokemonPrincipal from './components/09PokemonContexto/PokemonPrincipal';
 
 /* <HelloWorld />*/
 function App() {
@@ -48,7 +56,8 @@ function App() {
 
       <Temperatura03 /> */}
       {/* <Galaxia nome={'Via láctea'} /> */}
-      <Pai01 />
+      {/* <CompA /> */}
+      {/* <Pai01 />
       <div className="container ">
         <h1 className="centralizar">Meu PC</h1>
         <ul>
@@ -74,13 +83,14 @@ function App() {
             <Enemy name="Inimigo de Tal" img="./img/download.jpg" />
           </Arena>
         </World>
-      </div>
+      </div> */}
 
       {/* <ComPai /> */}
       {/* <Estados /> */}
-      {/* <div style={{ marginTop: 20 }}>
+      <div style={{ marginTop: 20 }}>
         <Pokemon />
-      </div> */}
+      </div>
+      <PokemonPrincipal />
     </div>
   );
 }
