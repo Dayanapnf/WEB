@@ -26,7 +26,7 @@ import Pokemon from './components/06Estados/Pokemon';
 function App() {
   return (
     <div className="App">
-      <h1>Desenvolvimento Web</h1>
+      <h1 className="centralizar">Desenvolvimento Web</h1>
       {/* <FuncoesInternas /> */}
       {/* <Loja /> */}
       {/* <Curso /> */}
@@ -47,24 +47,40 @@ function App() {
       <hr />
 
       <Temperatura03 /> */}
-      {/* <Pai01 /> */}
       {/* <Galaxia nome={'Via láctea'} /> */}
-      {/* <PC.PlacaDeVideo nome={'alguma-placa-mae'} preco={100} />
-      <PC.PlacaMae nome={'alguma-mae'} preco={150} />
-      <PC.Memoria nome={'alguma-memoria'} preco={50} /> */}
+      <Pai01 />
+      <div className="container ">
+        <h1 className="centralizar">Meu PC</h1>
+        <ul>
+          <li>
+            <PC.PlacaDeVideo nome={'alguma-placa-mae'} preco={100} />
+          </li>
+          <li>
+            <PC.PlacaMae nome={'alguma-mae'} preco={150} />
+          </li>
+          <li>
+            {' '}
+            <PC.Memoria nome={'alguma-memoria'} preco={50} />
+          </li>
+        </ul>
+      </div>
+      <div className="container centralizar">
+        <World>
+          <Arena arena="Tokio Dome – Underground Arena">
+            <Hero
+              name="Herói  de Tal"
+              img="./img/istockphoto-178366909-612x612.jpg"
+            />
+            <Enemy name="Inimigo de Tal" img="./img/download.jpg" />
+          </Arena>
+        </World>
+      </div>
 
-      {/* <World>
-        <Arena />
-        <Arena />
-        <Arena />
-      </World> */}
-      {/* <Arena arena="Tokio Dome – Underground Arena">
-        <Hero name="Sicrano de Tal" img="hero.jpg" />
-        <Enemy name="Fulano de Tal" img="enemy.png" />
-      </Arena> */}
       {/* <ComPai /> */}
       {/* <Estados /> */}
-      <Pokemon />
+      {/* <div style={{ marginTop: 20 }}>
+        <Pokemon />
+      </div> */}
     </div>
   );
 }

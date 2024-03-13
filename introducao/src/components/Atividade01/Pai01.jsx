@@ -3,7 +3,7 @@ import Filho01 from './Filho01';
 
 const Pai01 = () => {
   return (
-    <div>
+    <div className=" container centralizar">
       <h1>Calculadora IMC!</h1>
       <Filho01 altura={1.8} peso={90} />
     </div>

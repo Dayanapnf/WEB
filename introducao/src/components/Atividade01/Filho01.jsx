@@ -14,7 +14,7 @@ const Filho01 = ({ altura, peso }) => {
     }
   };
   return (
-    <div className="container centralizar">
+    <div className="centralizar">
       <h1>Resultado</h1>
       <h3>Imc: {imc().toFixed(2)}</h3>
       {resultado()}
