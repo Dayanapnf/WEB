@@ -29,7 +29,7 @@ import {
   CompE,
 } from './components/08Contexto/Contexto';
 import PokemonPrincipal from './components/09PokemonContexto/PokemonPrincipal';
-
+import Efeito from './components/10Efeito/Efeito';
 /* <HelloWorld />*/
 function App() {
   return (
@@ -56,7 +56,7 @@ function App() {
 
       <Temperatura03 /> */}
       {/* <Galaxia nome={'Via láctea'} /> */}
-      <CompA />
+      {/* <CompA /> */}
       {/* <Pai01 />
       <div className="container ">
         <h1 className="centralizar">Meu PC</h1>
@@ -87,10 +87,11 @@ function App() {
 
       {/* <ComPai /> */}
       {/* <Estados /> */}
-      <div style={{ marginTop: 20 }}>
+      {/* <div style={{ marginTop: 20 }}>
         <Pokemon />
       </div>
-      <PokemonPrincipal />
+      <PokemonPrincipal /> */}
+      <Efeito />
     </div>
   );
 }
