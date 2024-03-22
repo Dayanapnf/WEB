@@ -30,6 +30,11 @@ import {
 } from './components/08Contexto/Contexto';
 import PokemonPrincipal from './components/09PokemonContexto/PokemonPrincipal';
 import Efeito from './components/10Efeito/Efeito';
+
+import ComponentePromessa from './components/11Promessas/MinhaPromessa';
+import ComponentePai from './components/Atividade02/02Pokemon/ComponentePai';
+import ComponenteAvo from './components/Atividade02/02Pokemon/ComponenteAvo';
+import ComponenteFilho from './components/Atividade02/02Pokemon/ComponenteFilho';
 /* <HelloWorld />*/
 function App() {
   return (
@@ -91,7 +96,9 @@ function App() {
         <Pokemon />
       </div>
       <PokemonPrincipal /> */}
-      <Efeito />
+      {/* <Efeito /> */}
+      {/* <ComponentePromessa /> */}
+      <ComponenteAvo />
     </div>
   );
 }

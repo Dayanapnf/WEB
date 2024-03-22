@@ -5,7 +5,6 @@ import { PokemonContexto } from './PokemonContexto';
 
 const PoKemonImagem = () => {
   const { id } = useContext(PokemonContexto);
-  const { setId } = useContext(PokemonContexto);
   const [mensagem, setMensagem] = useState('');
   const url =
     'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/';
