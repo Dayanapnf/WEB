@@ -15,7 +15,7 @@ const Questao01A = () => {
   );
 };
 
-const Questao01B = ({ lista }) => {
+function Questao01B({ lista }) {
   // Função para encontrar o maior elemento de cada objeto na lista
   const maiorElemento = () => {
     let maiores = [];
@@ -44,6 +44,6 @@ const Questao01B = ({ lista }) => {
   };
 
   return <div>{Maiores()}</div>;
-};
+}
 
 export default Questao01A;
