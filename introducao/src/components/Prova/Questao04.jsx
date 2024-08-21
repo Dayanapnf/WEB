@@ -1,15 +1,19 @@
 import React, { useEffect, useState } from 'react';
-const Questao03 = () => {
+
+const Questao04 = () => {
   // Estado para armazenar a capital com menor e maior população
   const [capitais, setCapitais] = useState({ menor: '', maior: '' });
 
-  // Função para buscar os dados e calcular a capital com menor e maior população
+  // Função para retornar uma Promise com os dados das capitais
   const fetchData = async () => {
     try {
-      const response = await fetch(
-        'https://restcountries.com/v3.1/region/europe?fields=capital,population',
-      );
-      const data = await response.json();
+      const data = await new Promise((resolve) => {
+        resolve([
+          { capital: ['Dublin'], population: 4994724 },
+          { capital: ['Nicosia'], population: 1207361 },
+          { capital: ['Madrid'], population: 47351567 },
+        ]);
+      });
 
       // Ordenando os dados de população
       const ordena = data.sort((a, b) => a.population - b.population);
@@ -23,6 +27,7 @@ const Questao03 = () => {
       console.error('Erro ao buscar os dados:', error);
     }
   };
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -37,4 +42,4 @@ const Questao03 = () => {
   );
 };
 
-export default Questao03;
+export default Questao04;

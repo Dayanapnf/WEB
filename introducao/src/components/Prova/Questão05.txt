@@ -1,0 +1,36 @@
+O uso de Contextos ajuda a evitar o problema de propagação de propriedades, o props drilling, que é quando passamos propriedades por vários níveis para um componente aninhado, ou seja, quando precisamos passar dados de um componente pai para um componente filho que está distante na árvore de componentes, isso através de componentes que nem precisam dessas propriedades. Com o react context podemos criar um contexto e usá-lo diretamente importanto ele em qualquer projeto, sem precisar passar props manualmente em cada nível da árvore de componentes.
+
+Neste exemplo, o nome é passado diretamente do Provider para o componente Artigo sem precisar passar pelo componente Page, evitando o props drilling.
+
+import React, { createContext, useContext } from 'react';
+
+// Criação do contexto
+const UserContext = createContext();
+
+const App = () => {
+  const nome = "Dayana";
+
+  return (
+    <UserContext.Provider value={nome}>
+      <Page />
+    </UserContext.Provider>
+  );
+};
+
+const Page = () => {
+  return (
+    <div>
+      <Artigo />
+    </div>
+  );
+};
+
+const Artigo = () => {
+  const nome = useContext(UserContext);
+
+  return (
+    <div>
+    Usuário: {nome}
+    </div>
+  )
+};
