@@ -35,11 +35,14 @@ import ComponentePromessa from './components/11Promessas/MinhaPromessa';
 import ComponentePai from './components/Atividade02/02Pokemon/ComponentePai';
 import ComponenteAvo from './components/Atividade02/02Pokemon/ComponenteAvo';
 import ComponenteFilho from './components/Atividade02/02Pokemon/ComponenteFilho';
-/* <HelloWorld />*/
+
+import Main from './components/CRUD/Main';
+import Questao01 from './components/Prova/Questao01';
+import Questao02 from './components/Prova/Questao02';
+
 function App() {
   return (
-    <div className="App">
-      <h1 className="centralizar">Desenvolvimento Web</h1>
+    <div>
       {/* <FuncoesInternas /> */}
       {/* <Loja /> */}
       {/* <Curso /> */}
@@ -58,7 +61,6 @@ function App() {
         universidade="UFC"
       />
       <hr />
-
       <Temperatura03 /> */}
       {/* <Galaxia nome={'Via láctea'} /> */}
       {/* <CompA /> */}
@@ -98,7 +100,10 @@ function App() {
       <PokemonPrincipal /> */}
       {/* <Efeito /> */}
       {/* <ComponentePromessa /> */}
-      <ComponenteAvo />
+      {/*<ComponenteAvo />*/}
+      {/*<Main />*/}
+      <Questao01 />
+      <Questao02 />
     </div>
   );
 }
