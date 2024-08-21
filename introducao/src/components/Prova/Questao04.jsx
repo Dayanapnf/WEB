@@ -5,7 +5,7 @@ const Questao04 = () => {
   const [capitais, setCapitais] = useState({ menor: '', maior: '' });
 
   // Função para retornar uma Promise com os dados das capitais
-  const fetchData = async () => {
+  const fetchDados = async () => {
     try {
       const data = await new Promise((resolve) => {
         resolve([
@@ -29,7 +29,7 @@ const Questao04 = () => {
   };
 
   useEffect(() => {
-    fetchData();
+    fetchDados();
   }, []);
 
   return (

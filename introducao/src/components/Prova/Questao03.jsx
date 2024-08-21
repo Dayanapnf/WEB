@@ -4,7 +4,7 @@ const Questao03 = () => {
   const [capitais, setCapitais] = useState({ menor: '', maior: '' });
 
   // Função para buscar os dados e calcular a capital com menor e maior população
-  const fetchData = async () => {
+  const fetchDados = async () => {
     try {
       const response = await fetch(
         'https://restcountries.com/v3.1/region/europe?fields=capital,population',
@@ -24,7 +24,7 @@ const Questao03 = () => {
     }
   };
   useEffect(() => {
-    fetchData();
+    fetchDados();
   }, []);
 
   return (
